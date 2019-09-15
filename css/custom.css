@@ -75,7 +75,6 @@ input[type="file"] {
   font-size: 22px;
   border-radius: 10px;
   text-decoration: none;
-  margin-right: -300px;
 }
 .navbar {
   font-weight: 600;
@@ -378,8 +377,13 @@ a:focus, a:hover {
   }
 }
 
-/* //iphone 5 */
-@media(max-width: 375px){
+/* //iphone 5/10 */
+@media(max-width: 377px){
+body{
+  overflow-x: hidden !important;
+  /* overflow: hidden !important; */
+  max-width: 375px !important;
+}
 
   .picsomepic{
     font-size:20px !important;
@@ -391,8 +395,8 @@ a:focus, a:hover {
     padding-top: 1rem;
   }
   .active-frame{
-    width: 23rem !important;
-    margin-left: -1.5rem;
+    width: 30rem !important;
+    margin-left: -0.1rem;
     margin-top: -12.5rem !important; 
     margin-bottom: 17rem !important; 
 
@@ -403,9 +407,9 @@ a:focus, a:hover {
     padding:10px 3px;
     font-size: 16px;
     font-weight: 200; 
-    margin-top: -67rem !important;
-    margin-bottom: 3rem !important;
-    margin-right: 10rem !important;
+    /* margin-top: -6777rem !important; */
+    /* margin-bottom: 3rem !important; */
+    /* margin-right: 10rem !important; */
   }
   .social-btn{
     width: 270px !important;
@@ -417,6 +421,13 @@ a:focus, a:hover {
     margin-bottom: 0rem !important;
     margin-right: 8rem !important;
   }
+  .iphonex{
+    width: 300px !important;
+  } 
+.modal {
+  margin-left: 1rem !important;
+  margin-top: 5rem !important;
+}
   label{
     max-width: 300px;
     position: relative;
@@ -428,8 +439,8 @@ a:focus, a:hover {
   }
   .remove-image {
  
-    top: -39.3rem;
-    right: -18rem;
+    top: -46rem;
+    right: -25.9rem;
     border-radius: 10rem;
     padding : 0.4rem 0.8rem;
     
@@ -442,7 +453,7 @@ html, body{
   height: 100%;
 }
 body { 
-			background-image: url(/images/topbanner.jpg) ;
+			background-image: url(/images/topbannerr.jpg) ;
 			background-position: center center;
 			background-repeat:  no-repeat;
 			background-attachment: fixed;
@@ -475,4 +486,9 @@ div, body{
   color: #fff;
   padding: 0.5em;
 }
+/* 
+.bottomadjust{
+  position: absolute !important;
+  bottom: 0 !important;
 
+} */
